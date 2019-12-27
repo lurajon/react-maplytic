@@ -15,6 +15,10 @@ const Job = (props) => {
                 })
         }
     });
+
+    return (
+        <div>Jobs</div>
+    )
 }
 
 export default Job;
