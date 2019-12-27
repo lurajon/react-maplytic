@@ -1,11 +1,14 @@
 {
-    "name": "react-maplytic",
+    "name": "@lurajon/react-maplytic",
     "version": "1.0.0",
     "description": "This is a sample boilerplate for React Component Library",
     "main": "dist/react-maplytic.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/lurajon/react-maplytic"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
