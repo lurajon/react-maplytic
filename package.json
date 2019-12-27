@@ -1,6 +1,6 @@
 {
     "name": "@lurajon/react-maplytic",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "This is a sample boilerplate for React Component Library",
     "main": "dist/react-maplytic.js",
     "repository": {
@@ -12,7 +12,9 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack --mode production"
+        "build": "webpack --mode production",
+        "dev": "webpack --mode development",
+        "start": "webpack-dev-server --open --mode development"
     },
     "keywords": [
         "react",
@@ -27,7 +29,8 @@
         "@babel/plugin-proposal-class-properties": "^7.4.0",
         "babel-loader": "^8.0.5",
         "webpack": "^4.28.3",
-        "webpack-cli": "^3.2.0"
+        "webpack-cli": "^3.2.0",
+        "webpack-dev-server": "^3.10.1"
     },
     "dependencies": {
         "@material-ui/core": "^3.9.3",
