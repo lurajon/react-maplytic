@@ -12,6 +12,10 @@ module.exports = {
             },
         ]
     },
+    externals: {
+        'react': 'React',
+        'react-dom': 'ReactDOM'
+    },
     output: {
         path: path.resolve(__dirname, 'dist/'),
         publicPath: '',
