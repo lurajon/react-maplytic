@@ -33,11 +33,13 @@
   },
   "homepage": "https://github.com/lurajon/react-maplytic#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "clone": "^2.1.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-fontawesome": "^1.6.1"
+    "react-fontawesome": "^1.6.1",
+    "rollup-plugin-json": "^4.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

@@ -4,23 +4,28 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
 import postcss from 'rollup-plugin-postcss';
+import json from 'rollup-plugin-json';
+import react from 'react';
+import reactDom from 'react-dom';
+
+import pkg from './package.json';
 
 
 export default {
   input: './src/index.js',
-  moduleName: 'react-maplytic',
-  sourcemap: true,
-
-  targets: [
+  output: [
     {
-      dest: './dist/react-maplytic.js',
-      format: 'umd'
+      file: pkg.main,
+      format: 'umd',
+      name: pkg.name
     },
     {
-      dest: 'dist/react-maplytic.module.js',
-      format: 'es'
+      file: pkg.module,
+      format: 'es',
+      name: pkg.name
     }
   ],
+  sourcemap: true,
 
   plugins: [
     postcss({
@@ -33,10 +38,15 @@ export default {
       'process.env.NODE_ENV': JSON.stringify('development')
     }),
     resolve(),
-    commonjs()
+    commonjs({
+        include: 'node_modules/**',
+        namedExports: {
+          react: Object.keys(react),
+          'react-dom': Object.keys(reactDom)
+        }
+    }),
+    json()
   ],
-
-  external: ['react', 'react-dom'],
 
   globals: {
     react: 'React',
