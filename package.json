@@ -1,6 +1,6 @@
 {
   "name": "@lurajon/react-maplytic",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "React Maplytic component library",
   "main": "dist/maplytic-react.js",
   "module": "dist/maplytic-react.module.js",
