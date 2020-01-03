@@ -1,17 +1,22 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
     entry: './src/index.js',
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.m?js$/,
+                exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader",
-                },
-            },
+                    loader: "babel-loader"
+                }
+            }
         ]
     },
+    plugins: [
+        new CleanWebpackPlugin()
+    ],
     externals: {
         'react': 'React',
         'react-dom': 'ReactDOM'
