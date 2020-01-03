@@ -1,6 +1,6 @@
 {
     "name": "@lurajon/react-maplytic",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "This is a sample boilerplate for React Component Library",
     "main": "dist/react-maplytic.js",
     "repository": {
