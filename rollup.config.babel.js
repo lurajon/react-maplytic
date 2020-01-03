@@ -13,11 +13,11 @@ export default {
 
   targets: [
     {
-      dest: './build/react-maplytic.js',
+      dest: './dist/react-maplytic.js',
       format: 'umd'
     },
     {
-      dest: 'build/react-maplytic.module.js',
+      dest: 'dist/react-maplytic.module.js',
       format: 'es'
     }
   ],
