@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useForm = (callback) => {
+export const useForm = (callback) => {
 
     const [values, setValues] = useState({});
 
@@ -20,5 +20,3 @@ const useForm = (callback) => {
         values,
     }
 };
-
-export default useForm;

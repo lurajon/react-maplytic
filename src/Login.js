@@ -1,6 +1,6 @@
 import React from 'react'
 import { connection } from './connection';
-import useForm from './useForm';
+import { useForm } from './useForm';
 
 const Login = (props) => {
     const storageKey = props && props.tokenKey || 'maplytic.token';
