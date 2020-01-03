@@ -2,8 +2,8 @@
   "name": "@lurajon/react-maplytic",
   "version": "1.0.13",
   "description": "React Maplytic component library",
-  "main": "dist/maplytic-react.js",
-  "module": "dist/maplytic-react.module.js",
+  "main": "dist/react-maplytic.js",
+  "module": "dist/react-maplytic.module.js",
   "scripts": {
     "build": "rollup -c rollup.config.babel.js",
     "watch": "rollup -c rollup.config.babel.js -w",
