@@ -33,15 +33,14 @@
   },
   "homepage": "https://github.com/lurajon/react-maplytic#readme",
   "dependencies": {
-    "axios": "^0.19.0",
-    "clone": "^2.1.1",
-    "prop-types": "^15.6.0",
+    "axios": "^0.19.0"
+  },
+  "peerDependencies": {
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-fontawesome": "^1.6.1",
-    "rollup-plugin-json": "^4.0.0"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "@rollup/plugin-json": "^4.0.1",
     "babel-cli": "^6.26.0",
     "babel-jest": "^22.4.0",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -51,14 +50,17 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "classnames": "^2.2.5",
+    "clone": "^2.1.1",
     "css-loader": "^0.28.9",
     "jest": "^22.4.0",
     "node-sass": "^4.7.2",
     "postcss-scss": "^1.0.3",
+    "prop-types": "^15.6.0",
     "react-test-renderer": "^16.2.0",
     "rollup": "^0.56.2",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^3.0.3",
     "rollup-plugin-postcss": "^1.2.8",
     "rollup-plugin-replace": "^2.0.0",

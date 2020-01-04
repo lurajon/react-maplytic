@@ -5,8 +5,6 @@ import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
 import postcss from 'rollup-plugin-postcss';
 import json from 'rollup-plugin-json';
-import react from 'react';
-import reactDom from 'react-dom';
 
 import pkg from './package.json';
 
@@ -39,17 +37,10 @@ export default {
     }),
     resolve(),
     commonjs({
-        include: 'node_modules/**',
-        namedExports: {
-          react: Object.keys(react),
-          'react-dom': Object.keys(reactDom)
-        }
+        include: 'node_modules/**'
     }),
     json()
   ],
 
-  globals: {
-    react: 'React',
-    'react-dom': 'ReactDOM'
-  }
+  external: ['react', 'react-dom', 'prop-types']
 };
