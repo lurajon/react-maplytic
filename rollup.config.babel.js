@@ -37,5 +37,5 @@ export default {
     json()
   ],
 
-  external: ['react', 'react-dom', 'prop-types']
+  external: ['react', 'react-dom','debug','axios', 'zlib']
 };
